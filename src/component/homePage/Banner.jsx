@@ -1,12 +1,13 @@
 import React from 'react';
 import { HiPlus } from 'react-icons/hi';
+import Card from './card/Card';
 
 const Banner = () => {
     return (
         <div className="bg-slate-50">
-            <div className='container mx-auto'>
+            <div className='container mx-auto py-10'>
                 {/* header  */}
-                <div className="text-center space-y-7 pt-8">
+                <div className="text-center space-y-5">
                     <h2 className='font-bold text-5xl'> Friends to keep close in your life</h2>
                     <p className='gray max-w-150 mx-auto'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     <div className="">
@@ -14,8 +15,8 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* total card  */}
-                <div className="grid grid-cols-4 gap-5">
+                {/* total box  */}
+                <div className="grid grid-cols-4 gap-5 mt-10">
                     <div className="card card-body shadow bg-white text-center">
                         <h2 className='text-green font-semibold text-3xl'>10</h2>
                         <p className='gray'>Total Friend</p>
@@ -32,6 +33,15 @@ const Banner = () => {
                         <h2 className='text-green font-semibold text-3xl'>12</h2>
                         <p className='gray'>Interactions This Month</p>
                     </div>
+                </div>
+
+                <hr className='text-gray-300 my-10'/>
+
+                {/* all card  */}
+                <div className="">
+                    <h2 className='text-2xl font-semibold'>Your Friend</h2>
+                    <Card />
+
                 </div>
 
             </div>
