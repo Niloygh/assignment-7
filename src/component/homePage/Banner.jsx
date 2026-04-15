@@ -14,7 +14,7 @@ const Banner = async () => {
 
     return (
         <div className="bg-slate-100">
-            <div className='container mx-auto py-10'>
+            <div className='container mx-auto py-10 px-2'>
                 {/* header  */}
                 <div className="text-center space-y-5">
                     <h2 className='font-bold text-5xl'> Friends to keep close in your life</h2>
@@ -25,7 +25,7 @@ const Banner = async () => {
                 </div>
 
                 {/* total box  */}
-                <div className="grid grid-cols-4 gap-5 mt-10">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
                     <div className="card card-body shadow bg-white text-center">
                         <h2 className='text-green font-semibold text-3xl'>10</h2>
                         <p className='gray'>Total Friend</p>
@@ -49,7 +49,7 @@ const Banner = async () => {
                 {/* all card  */}
                 <div className="">
                     <h2 className='text-2xl font-semibold mb-5'>Your Friend</h2>
-                    <div className="grid grid-cols-4 gap-10 text-center">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
                         {
                             data.map(friend => <Friend key={friend.id} friend={friend} />)
                         }

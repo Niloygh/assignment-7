@@ -17,7 +17,7 @@ const Friend = ({ friend }) => {
                 <h1 className='text-xl font-bold'>{friend.name}</h1>
                 <p className='gray'>{friend.days}d ago</p>
                 <div className="flex gap-5 mx-auto">
-                    {friend.tags.map(tag => <div className='bg-[#CBFADB] font-semibold text-green px-3 py-1 rounded-3xl uppercase'>
+                    {friend.tags.map((tag, ind) => <div key={ind} className='bg-[#CBFADB] font-semibold text-green px-3 py-1 rounded-3xl uppercase'>
                         <p>{tag}</p>
                     </div>)}
                 </div>
