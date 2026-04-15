@@ -8,10 +8,19 @@
 .text-green{
     color: #244D3F;
 }
+.gray{
+    color: #64748B;
+}
 .bg-green{
     background-color: #244D3F;
     color: white;
 }
-.gray{
-    color: #64748B;
+
+.yellow{
+    color: white;
+    background-color: #EFAD44;
+}
+.red{
+    color: white;
+    background-color: #EF4444;
 }

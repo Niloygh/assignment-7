@@ -4,107 +4,95 @@
     "name": "David Kim",
     "picture": "https://randomuser.me/api/portraits/men/32.jpg",
     "email": "david.kim@example.com",
-    "days_since_contact": 10,
-    "status": "almost_due",
+    "days": 10,
+    "status": "almost due",
     "tags": ["work"],
     "bio": "Colleague from office. Loves tech discussions.",
     "goal": 14,
-    "next_due_date": "2025-07-25"
+    "next_date": "2025-07-25"
   },
   {
     "id": 2,
     "name": "Emma Wilson",
     "picture": "https://randomuser.me/api/portraits/women/44.jpg",
     "email": "emma.wilson@example.com",
-    "days_since_contact": 20,
+    "days": 20,
     "status": "overdue",
     "tags": ["family"],
     "bio": "Cousin. We grew up together.",
     "goal": 14,
-    "next_due_date": "2025-07-10"
+    "next_date": "2025-07-10"
   },
   {
     "id": 3,
     "name": "Lisa Nakamura",
     "picture": "https://randomuser.me/api/portraits/women/68.jpg",
     "email": "lisa.nakamura@example.com",
-    "days_since_contact": 18,
+    "days": 18,
     "status": "overdue",
     "tags": ["work"],
     "bio": "Worked on a project together in Tokyo.",
     "goal": 14,
-    "next_due_date": "2025-07-12"
+    "next_date": "2025-07-12"
   },
   {
     "id": 4,
     "name": "James Wright",
     "picture": "https://randomuser.me/api/portraits/men/75.jpg",
     "email": "james.wright@example.com",
-    "days_since_contact": 16,
+    "days": 16,
     "status": "overdue",
     "tags": ["hobby", "travel"],
     "bio": "Travel buddy. We explore new places together.",
     "goal": 14,
-    "next_due_date": "2025-07-15"
+    "next_date": "2025-07-15"
   },
   {
     "id": 5,
     "name": "Sophia Lee",
     "picture": "https://randomuser.me/api/portraits/women/12.jpg",
     "email": "sophia.lee@example.com",
-    "days_since_contact": 5,
-    "status": "on_track",
+    "days": 5,
+    "status": "on track",
     "tags": ["friend"],
     "bio": "Met at a conference. Loves coffee chats.",
     "goal": 14,
-    "next_due_date": "2025-08-01"
+    "next_date": "2025-08-01"
   },
   {
     "id": 6,
     "name": "Noah Smith",
     "picture": "https://randomuser.me/api/portraits/men/41.jpg",
     "email": "noah.smith@example.com",
-    "days_since_contact": 3,
-    "status": "on_track",
+    "days": 3,
+    "status": "on track",
     "tags": ["gym"],
     "bio": "Gym partner. Keeps me motivated.",
     "goal": 14,
-    "next_due_date": "2025-08-03"
+    "next_date": "2025-08-03"
   },
   {
     "id": 7,
     "name": "Olivia Brown",
     "picture": "https://randomuser.me/api/portraits/women/25.jpg",
     "email": "olivia.brown@example.com",
-    "days_since_contact": 13,
-    "status": "almost_due",
+    "days": 13,
+    "status": "almost due",
     "tags": ["college"],
     "bio": "University friend. Loves photography.",
     "goal": 14,
-    "next_due_date": "2025-07-22"
+    "next_date": "2025-07-22"
   },
   {
     "id": 8,
     "name": "Liam Johnson",
     "picture": "https://randomuser.me/api/portraits/men/55.jpg",
     "email": "liam.johnson@example.com",
-    "days_since_contact": 1,
-    "status": "on_track",
+    "days": 1,
+    "status": "on track",
     "tags": ["gaming"],
     "bio": "Online gaming friend. Plays every weekend.",
     "goal": 14,
-    "next_due_date": "2025-08-05"
-  },
-  {
-    "id": 9,
-    "name": "Ava Martinez",
-    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
-    "email": "ava.martinez@example.com",
-    "days_since_contact": 22,
-    "status": "overdue",
-    "tags": ["neighbor"],
-    "bio": "Neighbor. We often go for walks.",
-    "goal": 14,
-    "next_due_date": "2025-07-08"
+    "next_date": "2025-08-05"
   }
 ]

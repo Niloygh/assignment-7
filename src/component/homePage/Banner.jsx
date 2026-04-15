@@ -1,10 +1,19 @@
 import React from 'react';
 import { HiPlus } from 'react-icons/hi';
-import Card from './card/Card';
+import Friend from './card/Friend';
 
-const Banner = () => {
+const dataPromise = async function () {
+    const res = await fetch('http://localhost:3000/data.json')
+    const data = await res.json()
+    return data;
+}
+
+const Banner = async () => {
+    const data = await dataPromise()
+    console.log(data)
+
     return (
-        <div className="bg-slate-50">
+        <div className="bg-slate-100">
             <div className='container mx-auto py-10'>
                 {/* header  */}
                 <div className="text-center space-y-5">
@@ -35,12 +44,18 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <hr className='text-gray-300 my-10'/>
+                <hr className='text-gray-300 my-10' />
 
                 {/* all card  */}
                 <div className="">
-                    <h2 className='text-2xl font-semibold'>Your Friend</h2>
-                    <Card />
+                    <h2 className='text-2xl font-semibold mb-5'>Your Friend</h2>
+                    <div className="grid grid-cols-4 gap-10 text-center">
+                        {
+                            data.map(friend => <Friend key={friend.id} friend={friend} />)
+                        }
+                    </div>
+
+
 
                 </div>
 
