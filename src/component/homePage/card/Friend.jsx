@@ -5,8 +5,6 @@ import React from 'react';
 
 const Friend = ({ friend }) => {
 
-
-
     return (
         <Link href={`/${friend.id}`} className="">
             <div className='card card-body shadow border-slate-900 bg-white transition transform hover:scale-105 duration-300'>
