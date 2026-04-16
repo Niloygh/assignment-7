@@ -8,9 +8,11 @@ const dataPromise = async function () {
     return data;
 }
 
-const Banner = async () => {
+const Banner = async ({from}) => {
     const data = await dataPromise()
     console.log(data)
+
+    console.log(from, 'from')
 
     return (
         <div className="bg-slate-100">

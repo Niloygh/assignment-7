@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -7,7 +8,7 @@ const Friend = ({ friend }) => {
 
 
     return (
-        <div className="">
+        <Link href={`/${friend.id}`} className="">
             <div className='card card-body shadow border-slate-900 bg-white transition transform hover:scale-105 duration-300'>
                 <Image
                     src={friend.picture}
@@ -25,7 +26,7 @@ const Friend = ({ friend }) => {
                     <p className={`w-25 h-5.5 rounded-full uppercase ${friend.status === "almost due" ? 'yellow' : friend.status === 'overdue' ? 'red' : 'bg-green'}`}>{friend.status}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
