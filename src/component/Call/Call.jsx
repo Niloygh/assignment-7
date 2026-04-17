@@ -5,6 +5,7 @@ import React, { useContext, useState } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { PiChatTextLight } from 'react-icons/pi';
+import { toast } from 'react-toastify';
 
 const Call = ({app}) => {
 
@@ -14,6 +15,7 @@ const Call = ({app}) => {
     
     const handleData = (app, type) => {
         setTimeline((prev) => [...prev, {...app, time: new Date(), type}])
+        toast.success(`${type} added`);
     }
 
     return (

@@ -63,7 +63,9 @@ const timeline = () => {
                             <div className="text-3xl">{nData.type === 'call' ? <FiPhoneCall /> : nData.type === 'text' ? <PiChatTextLight /> : <IoVideocamOutline />}</div>
 
                             <div className="">
-                                <h1 className='font-semibold'>{nData.type === 'Call' ? 'MeetUp' : nData.type}</h1>
+                                <h1 className='font-semibold'>
+                                    <span className='font-bold text-green text-xl'>{nData.type === 'call' ? 'MeetUp' : nData.type}</span> with {nData.name} 
+                                </h1>
                                 <p>{new Date(nData.time).toLocaleString()}</p>
                             </div>
                         </div>

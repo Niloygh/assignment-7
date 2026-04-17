@@ -35,7 +35,7 @@ const friendDetails = async ({ params }) => {
     const { id } = await params;
     // console.log(id, 'params')
 
-    const app = apps.find((app) => app.id == id)
+    const app = apps.find((app) => String(app.id) == id)
     // console.log(app)
 
     return (
