@@ -1,13 +1,14 @@
 ProjectName : KeenKeeper
 
-Description: “A5 DigiTools” is a simple and user-friendly online tools platform where various essential digital tools are available in one place. It helps users quickly and efficiently complete small digital tasks (such as conversions, generation, or utility-based tasks).
+*Description: "This is a modern statistics dashboard web application that visualizes assignment data in an interactive and user-friendly way. Users can easily explore different insights through dynamic charts and organized layouts. The project focuses on delivering a clean UI, fast performance, and responsive design to ensure a smooth experience across all devices."*
 
-Technology : React.js, Tailwind CSS, DaisyUI, JavaScript (ES6+), React-Toastify (NPM Package), JSON (for product data)
+## Technologies Used : React.js, Next.js, JavaScript (ES6+), Tailwind CSS, Vercel (Deployment), react icon, rechart,  
+
 
 3 Features about out project.
 
-1. All-in-One Tool Collection – Multiple useful digital tools are available in one platform, saving time and effort.
+1. Users can view assignment statistics through dynamic charts and graphs, making data easier to understand and analyze.
 
-2. Fast & Efficient Performance – Tools work quickly, allowing users to complete tasks instantly without delays.
+2. The website is fully responsive, ensuring a smooth experience across mobile, tablet, and desktop devices.
 
-3. User-Friendly Interface – Clean and simple design makes it easy for anyone to use without technical knowledge.
+3. Data loads quickly with smooth transitions, providing a seamless and efficient user experience.
