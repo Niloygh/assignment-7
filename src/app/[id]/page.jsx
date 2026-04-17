@@ -37,8 +37,8 @@ const friendDetails = async ({ params }) => {
     return (
         <div className='bg-slate-100'>
 
-            <div className="container mx-auto py-10 flex gap-5 ">
-                <div className="w-1/4 text-center space-y-5">
+            <div className="container mx-auto py-10 flex flex-col md:flex-row gap-5 ">
+                <div className="w-full md:w-1/4 text-center space-y-5">
                     <div className="shadow bg-white  space-y-2 py-5 rounded-md">
                         <Image src={app.picture} alt="" width={100} height={100} className='mx-auto rounded-full' priority />
                         <h2 className='text-xl font-bold'>{app.name}</h2>
@@ -70,7 +70,7 @@ const friendDetails = async ({ params }) => {
                     </div>
                 </div>
 
-                <div className="flex-1 space-y-5">
+                <div className="md:flex-1 space-y-5">
                     <div className="grid grid-cols-3 gap-5">
                         <div className="bg-white rounded-md py-5 text-center shadow space-y-2">
                             <h1 className='font-semibold text-green text-3xl'>62</h1>
