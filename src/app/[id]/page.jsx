@@ -14,19 +14,19 @@ const dataPromise = async function () {
     return data;
 }
 
-// const callDataPromise = async function () {
-//     const res = await fetch('http://localhost:3000/callData.json')
-//     const data = await res.json()
-//     return data
-// }
+const callDataPromise = async function () {
+    const res = await fetch('http://localhost:3000/callData.json')
+    const data = await res.json()
+    return data
+}
 
 
 
 const friendDetails = async ({ params }) => {
     const apps = await dataPromise()
 
-    // const callDts = await callDataPromise()
-    // // console.log(callDts)
+    const callDts = await callDataPromise()
+    // console.log(callDts)
 
     const { id } = await params;
     // console.log(id, 'params')
@@ -102,8 +102,17 @@ const friendDetails = async ({ params }) => {
 
 
                     {/* responsive side   */}
-                    
-                    <CallData />
+
+                    <div className="bg-white px-5 py-6 rounded-md shadow space-y-3">
+                        <p>Quick Check-In</p>
+
+                        <div className="grid grid-cols-3 gap-5">
+                            {
+                                callDts.map(callDt => <CallData key={callDt.id} callDt={callDt} />)
+                            }
+                        </div>
+                    </div>
+
 
 
 

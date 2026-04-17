@@ -1,39 +1,21 @@
 'use client'
 
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const InstallAppsContext = createContext()
 
 
-const InstalledAppsProvider = ({children}) => {
+const InstalledAppsProvider = ({ children }) => {
 
-    const data = [
-  {
-    "id": 1,
-    "type": "Call",
-    "icon": "phone",
-    "description": "Industry conference meetup",
-    "date": "2026-01-28"
-  },
-  {
-    "id": 2,
-    "type": "Text",
-    "icon": "chat",
-    "description": "Asked for career advice",
-    "date": "2026-01-28"
-  },
-  {
-    "id": 3,
-    "type": "Video",
-    "icon": "video",
-    "description": "Asked for career advice",
-    "date": "2026-01-28"
+  const [notification,  setNotification] = useState([])
+  const data = {
+    notification,
+    setNotification
   }
-]
-    
-    return (
-        <InstallAppsContext.Provider value={data}>{children}</InstallAppsContext.Provider>
-    );
+
+  return (
+    <InstallAppsContext.Provider value={data}>{children}</InstallAppsContext.Provider>
+  );
 };
 
 export default InstalledAppsProvider;
