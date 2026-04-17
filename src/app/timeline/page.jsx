@@ -58,8 +58,8 @@ const timeline = () => {
 
 
                 <div className="">
-                    {sortData.map(nData => <div
-                        key={nData.type}
+                    {sortData.map((nData, index) => <div
+                        key={index}
                         className='shadow bg-white rounded-md mt-5 py-6 px-5'>
 
                         <div className="flex gap-4 items-center">
