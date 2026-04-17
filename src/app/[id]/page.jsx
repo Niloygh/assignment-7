@@ -1,5 +1,4 @@
 import Call from '@/component/Call/Call';
-import CallData from '@/component/callData/CallData';
 import Image from 'next/image';
 import React from 'react';
 import { FaHistory } from 'react-icons/fa';
