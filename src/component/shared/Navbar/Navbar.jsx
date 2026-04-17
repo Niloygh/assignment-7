@@ -28,10 +28,10 @@ const Navbar = () => {
         <div className="">
             <div className="navbar -sm bg-base-100 shadow px-2 md:px-5">
                 <div className="navbar-start">
-                    <h1 className='text-green font-bold text-2xl'><span className='text-black'>Keen</span>Keeper</h1>
+                    <h1 className='text-green font-bold text-sm md:text-2xl'><span className='text-black'>Keen</span>Keeper</h1>
                 </div>
                 <div className="navbar-end flex">
-                    <ul className="flex justify-between gap-3 items-center font-semibold gray">
+                    <ul className="flex justify-between gap-[2px] md:gap-3 items-center font-semibold gray">
                         {
                             navItems.map((item, ind) => <MyNavbar key={ind} href={item.path} icon={item.icon} >{item.text}</MyNavbar>)
                         }
