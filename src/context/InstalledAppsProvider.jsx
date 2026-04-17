@@ -7,10 +7,10 @@ export const InstallAppsContext = createContext()
 
 const InstalledAppsProvider = ({ children }) => {
 
-  const [notification,  setNotification] = useState([])
+  const [timeline,  setTimeline] = useState([])
   const data = {
-    notification,
-    setNotification
+    timeline,
+    setTimeline
   }
 
   return (

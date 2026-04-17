@@ -1,3 +1,4 @@
+import Call from '@/component/Call/Call';
 import CallData from '@/component/callData/CallData';
 import Image from 'next/image';
 import React from 'react';
@@ -9,13 +10,17 @@ import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
 
 const dataPromise = async function () {
-    const res = await fetch('http://localhost:3000/data.json')
+    const res = await fetch('http://localhost:3000/data.json', {
+        cache: 'no-cache'
+    })
     const data = await res.json()
     return data;
 }
 
 const callDataPromise = async function () {
-    const res = await fetch('http://localhost:3000/callData.json')
+    const res = await fetch('http://localhost:3000/callData.json',  {
+        cache: 'no-cache'
+    })
     const data = await res.json()
     return data
 }
@@ -105,12 +110,8 @@ const friendDetails = async ({ params }) => {
 
                     <div className="bg-white px-5 py-6 rounded-md shadow space-y-3">
                         <p>Quick Check-In</p>
-
-                        <div className="grid grid-cols-3 gap-5">
-                            {
-                                callDts.map(callDt => <CallData key={callDt.id} callDt={callDt} />)
-                            }
-                        </div>
+                        
+                        <Call app={app} />
                     </div>
 
 
