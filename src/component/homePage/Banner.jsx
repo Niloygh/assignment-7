@@ -3,7 +3,9 @@ import { HiPlus } from 'react-icons/hi';
 import Friend from './card/Friend';
 
 const dataPromise = async function () {
-    const res = await fetch('http://localhost:3000/data.json')
+    const res = await fetch('https://assignment-7-navy.vercel.app/data.json', {
+        cache: 'no-cache'
+    })
     const data = await res.json()
     return data;
 }
@@ -29,7 +31,7 @@ const Banner = async ({from}) => {
                 {/* total box  */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
                     <div className="card card-body shadow bg-white text-center">
-                        <h2 className='text-green font-semibold text-3xl'>8</h2>
+                        <h2 className='text-green font-semibold text-3xl'>10</h2>
                         <p className='gray'>Total Friend</p>
                     </div>
                     <div className="card card-body shadow bg-white text-center">

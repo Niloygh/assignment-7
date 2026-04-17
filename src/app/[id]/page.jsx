@@ -9,7 +9,7 @@ import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
 
 const dataPromise = async function () {
-    const res = await fetch('http://localhost:3000/data.json', {
+    const res = await fetch('https://assignment-7-navy.vercel.app/data.json', {
         cache: 'no-cache'
     })
     const data = await res.json()
@@ -17,7 +17,7 @@ const dataPromise = async function () {
 }
 
 const callDataPromise = async function () {
-    const res = await fetch('http://localhost:3000/callData.json',  {
+    const res = await fetch('https://assignment-7-navy.vercel.app/callData.json',  {
         cache: 'no-cache'
     })
     const data = await res.json()
@@ -61,15 +61,15 @@ const friendDetails = async ({ params }) => {
 
                     </div>
 
-                    <div className="shadow bg-white space-y-2 py-3 font-semibold rounded-md">
+                    <div className="btn w-80 shadow bg-white space-y-2 py-3 font-semibold rounded-md">
                         <p className='flex justify-center items-center gap-2'> <span><RiNotificationSnoozeLine /></span> <span>Snooze 2 weeks</span></p>
                     </div>
 
-                    <div className="shadow bg-white space-y-2 py-3 font-semibold rounded-md">
+                    <div className="btn w-80 shadow bg-white space-y-2 py-3 font-semibold rounded-md">
                         <p className='flex justify-center items-center gap-2'> <span><FiArchive /></span> <span>Archive</span></p>
                     </div>
 
-                    <div className="shadow bg-white space-y-2 py-3 font-semibold rounded-md">
+                    <div className="btn w-80 shadow bg-white space-y-2 py-3 font-semibold rounded-md">
                         <p className='flex justify-center items-center gap-2'> <span><RiDeleteBin6Line color='red' /></span> <span>Snooze 2 weeks</span></p>
                     </div>
                 </div>

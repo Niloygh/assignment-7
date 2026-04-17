@@ -15,10 +15,13 @@ const timeline = () => {
     const [sortingType, setSortingType] = useState('')
     console.log(sortingType)
 
+    const [sortData , setSortData] = useState(timeline)
+    
     const handleFilter = (timeline, type) => {
         setSortingType(type.toUpperCase())
         const filter = timeline.filter(data => data.type == type)
-        setTimeline(filter) 
+        // setTimeline(filter)
+        setSortData(filter)
     }
 
     return (
@@ -55,7 +58,7 @@ const timeline = () => {
 
 
                 <div className="">
-                    {timeline.map(nData => <div
+                    {sortData.map(nData => <div
                         key={nData.type}
                         className='shadow bg-white rounded-md mt-5 py-6 px-5'>
 
